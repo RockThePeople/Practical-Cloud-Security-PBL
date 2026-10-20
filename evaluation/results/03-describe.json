@@ -1,0 +1,165 @@
+{
+  "normal": {
+    "label": "benign",
+    "runs": 5,
+    "source_ips": [
+      "172.19.0.1"
+    ],
+    "user_agents": [
+      "kubectl/v1.37.1 (linux/amd64) kubernetes/f78e722"
+    ],
+    "requests_per_run": [
+      5
+    ],
+    "duration_seconds": {
+      "min": 0.41,
+      "max": 0.47,
+      "mean": 0.44
+    },
+    "requests_per_second": {
+      "min": 10.7,
+      "max": 12.1,
+      "mean": 11.4
+    },
+    "request_shapes": [
+      "get pods",
+      "list configmaps",
+      "list pods",
+      "list services"
+    ],
+    "forbidden_per_run": [
+      0
+    ],
+    "named_per_run": [
+      1
+    ]
+  },
+  "normal_misconfig": {
+    "label": "benign",
+    "runs": 5,
+    "source_ips": [
+      "172.19.0.1"
+    ],
+    "user_agents": [
+      "kubectl/v1.37.1 (linux/amd64) kubernetes/f78e722"
+    ],
+    "requests_per_run": [
+      8
+    ],
+    "duration_seconds": {
+      "min": 0.68,
+      "max": 0.76,
+      "mean": 0.72
+    },
+    "requests_per_second": {
+      "min": 10.5,
+      "max": 11.8,
+      "mean": 11.1
+    },
+    "request_shapes": [
+      "get pods",
+      "get secrets",
+      "list configmaps",
+      "list pods",
+      "list services"
+    ],
+    "forbidden_per_run": [
+      3
+    ],
+    "named_per_run": [
+      4
+    ]
+  },
+  "abnormal_1": {
+    "label": "attack",
+    "runs": 5,
+    "source_ips": [
+      "172.19.0.1"
+    ],
+    "user_agents": [
+      "kubectl/v1.37.1 (linux/amd64) kubernetes/f78e722"
+    ],
+    "requests_per_run": [
+      1
+    ],
+    "duration_seconds": null,
+    "requests_per_second": null,
+    "request_shapes": [
+      "list secrets"
+    ],
+    "forbidden_per_run": [
+      1
+    ],
+    "named_per_run": [
+      0
+    ]
+  },
+  "abnormal_2": {
+    "label": "attack",
+    "runs": 5,
+    "source_ips": [
+      "172.19.0.1"
+    ],
+    "user_agents": [
+      "curl/7.81.0",
+      "kubectl/v1.37.1 (linux/amd64) kubernetes/f78e722"
+    ],
+    "requests_per_run": [
+      2
+    ],
+    "duration_seconds": {
+      "min": 0.04,
+      "max": 0.04,
+      "mean": 0.04
+    },
+    "requests_per_second": {
+      "min": 45.6,
+      "max": 54.3,
+      "mean": 49.8
+    },
+    "request_shapes": [
+      "create pods exec",
+      "list pods"
+    ],
+    "forbidden_per_run": [
+      1
+    ],
+    "named_per_run": [
+      1
+    ]
+  },
+  "abnormal_3": {
+    "label": "attack",
+    "runs": 5,
+    "source_ips": [
+      "172.19.0.1"
+    ],
+    "user_agents": [
+      "kubectl/v1.37.1 (linux/amd64) kubernetes/f78e722"
+    ],
+    "requests_per_run": [
+      18
+    ],
+    "duration_seconds": {
+      "min": 1.71,
+      "max": 1.82,
+      "mean": 1.75
+    },
+    "requests_per_second": {
+      "min": 9.9,
+      "max": 10.5,
+      "mean": 10.3
+    },
+    "request_shapes": [
+      "list configmaps",
+      "list pods",
+      "list secrets"
+    ],
+    "forbidden_per_run": [
+      6
+    ],
+    "named_per_run": [
+      0
+    ]
+  }
+}
