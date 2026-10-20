@@ -1,0 +1,172 @@
+{
+  "episodes": 25,
+  "rows": [
+    {
+      "detector": "base",
+      "data": "original",
+      "attack_runs_detected": 15,
+      "attack_runs": 15,
+      "benign_runs_false_alarm": 5,
+      "benign_runs": 10,
+      "TP": 40,
+      "FP": 15,
+      "FN": 65,
+      "TN": 50,
+      "precision": 0.727,
+      "recall": 0.381,
+      "abnormal_3_alerts_per_run": 12.0,
+      "abnormal_3_incidents_per_run": 12.0,
+      "alerts_by_rule_total": {
+        "R1": 50,
+        "R2": 5,
+        "R3": 55
+      },
+      "fn": {
+        "abnormal_2 list pods 200": 5,
+        "abnormal_3 list pods 200": 30,
+        "abnormal_3 list configmaps 200": 30
+      },
+      "fp": {
+        "normal_misconfig get secrets 403": 15
+      }
+    },
+    {
+      "detector": "base",
+      "data": "counterfactual",
+      "attack_runs_detected": 15,
+      "attack_runs": 15,
+      "benign_runs_false_alarm": 5,
+      "benign_runs": 10,
+      "TP": 40,
+      "FP": 15,
+      "FN": 65,
+      "TN": 50,
+      "precision": 0.727,
+      "recall": 0.381,
+      "abnormal_3_alerts_per_run": 6.0,
+      "abnormal_3_incidents_per_run": 6.0,
+      "alerts_by_rule_total": {
+        "R1": 50,
+        "R2": 5,
+        "R3": 0
+      },
+      "fn": {
+        "abnormal_2 list pods 200": 5,
+        "abnormal_3 list pods 200": 30,
+        "abnormal_3 list configmaps 200": 30
+      },
+      "fp": {
+        "normal_misconfig get secrets 200": 15
+      }
+    },
+    {
+      "detector": "u12",
+      "data": "original",
+      "attack_runs_detected": 15,
+      "attack_runs": 15,
+      "benign_runs_false_alarm": 0,
+      "benign_runs": 10,
+      "TP": 105,
+      "FP": 0,
+      "FN": 0,
+      "TN": 65,
+      "precision": 1.0,
+      "recall": 1.0,
+      "abnormal_3_alerts_per_run": 13.0,
+      "abnormal_3_incidents_per_run": 1.0,
+      "alerts_by_rule_total": {
+        "R1": 50,
+        "R2": 5,
+        "R3": 55,
+        "C1": 5,
+        "C2": 5,
+        "C3": 5
+      },
+      "fn": {},
+      "fp": {}
+    },
+    {
+      "detector": "u12",
+      "data": "counterfactual",
+      "attack_runs_detected": 15,
+      "attack_runs": 15,
+      "benign_runs_false_alarm": 0,
+      "benign_runs": 10,
+      "TP": 45,
+      "FP": 0,
+      "FN": 60,
+      "TN": 65,
+      "precision": 1.0,
+      "recall": 0.429,
+      "abnormal_3_alerts_per_run": 6.0,
+      "abnormal_3_incidents_per_run": 1.0,
+      "alerts_by_rule_total": {
+        "R1": 50,
+        "R2": 5,
+        "R3": 0,
+        "C1": 0,
+        "C2": 0,
+        "C3": 5
+      },
+      "fn": {
+        "abnormal_3 list pods 200": 30,
+        "abnormal_3 list configmaps 200": 30
+      },
+      "fp": {}
+    },
+    {
+      "detector": "u123",
+      "data": "original",
+      "attack_runs_detected": 15,
+      "attack_runs": 15,
+      "benign_runs_false_alarm": 0,
+      "benign_runs": 10,
+      "TP": 105,
+      "FP": 0,
+      "FN": 0,
+      "TN": 65,
+      "precision": 1.0,
+      "recall": 1.0,
+      "abnormal_3_alerts_per_run": 19.0,
+      "abnormal_3_incidents_per_run": 1.0,
+      "alerts_by_rule_total": {
+        "R1": 50,
+        "R2": 5,
+        "R3": 55,
+        "C1": 5,
+        "C2": 5,
+        "C3": 5,
+        "A1": 55
+      },
+      "fn": {},
+      "fp": {}
+    },
+    {
+      "detector": "u123",
+      "data": "counterfactual",
+      "attack_runs_detected": 15,
+      "attack_runs": 15,
+      "benign_runs_false_alarm": 0,
+      "benign_runs": 10,
+      "TP": 105,
+      "FP": 0,
+      "FN": 0,
+      "TN": 65,
+      "precision": 1.0,
+      "recall": 1.0,
+      "abnormal_3_alerts_per_run": 13.0,
+      "abnormal_3_incidents_per_run": 1.0,
+      "alerts_by_rule_total": {
+        "R1": 50,
+        "R2": 5,
+        "R3": 0,
+        "C1": 5,
+        "C2": 0,
+        "C3": 5,
+        "A1": 55
+      },
+      "fn": {},
+      "fp": {}
+    }
+  ]
+}
